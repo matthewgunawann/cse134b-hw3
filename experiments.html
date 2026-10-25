@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML experiments for CSE 134B by Matthew Gunawan">
+    <title>Matthew Gunawan | Experiments</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Matthew Gunawan</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+            <a href="experiments.html" aria-current="page">Experiments</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>HTML Experiments</h2>
+            <p>This page is where I tested out different HTML tags for CSE 134B Homework 2.</p>
+        </section>
+
+        <section>
+            <h2>Video Demo</h2>
+            <p>Here's a short video I recorded to test the video tag.</p>
+
+            <video controls width="320">
+                <source src="media/demo-video.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+        <section>
+            <h2>Audio Demo</h2>
+            <p>I also recorded a short audio clip to test how the audio tag works.</p>
+
+            <audio controls>
+                <source src="media/demo-audio.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Canvas Demo</h2>
+            <p>I used a little JavaScript to draw a rectangle and a circle on the canvas.</p>
+
+            <canvas id="demo-canvas" width="320" height="120">
+                A rectangle and a circle drawn using JavaScript.
+            </canvas>
+        </section>
+
+        <section>
+            <h2>Template Demo</h2>
+            <p>The template tag lets me store HTML that doesn't show up on the page right away.</p>
+
+            <template id="project-template">
+                <article>
+                    <h3>Example Project</h3>
+                    <p>This is some example content inside a template.</p>
+                </article>
+            </template>
+
+            <p>The example project above is in the HTML, but it won't appear on the page.</p>
+        </section>
+
+        <section>
+            <h2>Custom Element Demo</h2>
+            <p>I made a custom element that prints "Hello World!" in the browser console.</p>
+
+            <hello-world></hello-world>
+        </section>
+
+        <section>
+            <h2>SVG Demo</h2>
+            <p>SVG lets me draw simple shapes directly in HTML without needing an image file.</p>
+
+            <svg width="250" height="130" viewBox="0 0 250 130"
+                 role="img" aria-label="A blue rectangle and red circle"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <rect x="10" y="20" width="100" height="80" fill="blue"/>
+                <circle cx="175" cy="60" r="40" fill="red"/>
+            </svg>
+        </section>
+        <section>
+            <h2>MathML (Extra Credit)</h2>
+            <p>Einstein's formula.</p>
+
+            <math display="block">
+                <mi>E</mi>
+                <mo>=</mo>
+                <mi>m</mi>
+                <msup>
+                    <mi>c</mi>
+                    <mn>2</mn>
+                </msup>
+            </math>
+
+            <p>MathML has been around for a long time, I believe that it wasn't widely used because it was not availble for a range of different browsers. Meaning that some browsers supported it while some didn't. Chrome also only brought back MathML in 2023, which I believe led to it being diffcult for developers to rely on before 2023.</p>
+
+        </section>
+        <section>
+            <h2>Iframe Demo</h2>
+            <p>I'm using an iframe to show my About page inside this page.</p>
+
+            <iframe src="about.html" title="My About Page"
+                    width="400" height="250">
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Progress Demo</h2>
+            <p>The progress tag shows how much of a task has been completed.</p>
+
+            <label for="example-progress">Task Progress:</label>
+            <progress id="example-progress" value="3" max="5">3 out of 5</progress>
+
+            <p>This example shows 3 out of 5 tasks completed.</p>
+        </section>
+
+        <section>
+            <h2>Dialog Demo</h2>
+            <p>The dialog tag can be used to display a message or popup.</p>
+
+            <dialog open>
+                <p>This is an example of a dialog box.</p>
+            </dialog>
+        </section>
+
+        <section>
+            <h2>My Software Development Process</h2>
+            <p>These are the general steps I follow when working on a programming project.</p>
+
+            <ol>
+                <li>Read and understand the requirements.</li>
+                <li>Plan out how I'm going to approach the project.</li>
+                <li>Start writing the code.</li>
+                <li>Test everything and fix any bugs.</li>
+                <li>Review the code and make improvements.</li>
+            </ol>
+        </section>
+
+        <noscript>
+            <p>JavaScript is disabled, so the canvas and custom element demos won't work.</p>
+        </noscript>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Matthew Gunawan</p>
+        <p>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </p>
+    </footer>
+
+    <script src="js/canvas-demo.js"></script>
+    <script src="js/hello-world.js"></script>
+</body>
+</html>
